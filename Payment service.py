@@ -1,14 +1,25 @@
 from Project.gpay import Pay
+import time
+import random
 Pay.welcome()
 Pay.login()
+def otp():
+    otp = random.randint(1000,9999)
+    print("OTP :",otp)
+    
+otp()
 def choose_option():
     #Menu of options in google pay
-    print("Choose an option:")
+    print()
     print("1. Electricity Bills")
+    print()
     print("2. Mobile Recharge")
+    print()
     print("3. Request Money")
+    print()
     print("4. Investment")
-    choice = int(input("Enter your choice: "))
+    print()
+    choice = int(input(" "))
     if choice == 1:
         Pay.electricity_bills()
         choose_option()
@@ -16,7 +27,7 @@ def choose_option():
         Pay.show_recharge_offers()
         choose_option()
     elif choice == 3:
-        Pay.show_recharge_offers()
+        Pay.request_money()
         choose_option()
     elif choice == 4:
         y=int(input("1.Indian Market\n2.Crypto Currency"))
@@ -32,4 +43,6 @@ def choose_option():
             print("Invalid Choice")
     else :
         print("Invalid Option")
-choose_option()
+while True:
+    time.sleep(1)
+    choose_option()
