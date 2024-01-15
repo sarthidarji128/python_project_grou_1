@@ -1,5 +1,9 @@
+from fpdf import FPDF
+import random
 class India:
     def indm():
+        id=random.randint(1000000,99999999)
+        sa = id
         lis1=[1,2,3,4,5,6,7,8,9,10]
         name=["Nifty 50","Sensex","SUZLON ENERGY LTD","TATA MOTORS LTD","ZOMATO LTD","ICICI BANK","RELIANCE INDS","INFOSYS LTD","INDIAN OIL CORP","HDFC BANK"]
         price=[21456.65,70514.20,38.55,732.40,123.60,1037.40,2495.60,1578.40,123.80,1656.55]
@@ -15,6 +19,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[0], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR ", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[0]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -26,6 +41,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[1], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[1]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -37,6 +63,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[2], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[2]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -48,6 +85,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[3], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[3]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -59,6 +107,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[4], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[4]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -70,6 +129,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[5], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[5]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm
             else:
@@ -81,6 +151,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[6], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[6]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -92,6 +173,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[7], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[7]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -103,6 +195,17 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[8], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[8]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
@@ -114,23 +217,35 @@ class India:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[9], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN INR", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[9]*y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return India.indm()
             else:
                 print("Input error")
         else :
             print("Input error!!")
-India.indm()
+
 
 class Crypto:
     def forex():
+        id = random.randint(1000000, 99999999)
         lis1=[1,2,3,4,5,6,7,8,9,10]
         name=["Bitcoin","Ethereum","Tether","BNB","Solana","Cosmos","The Graph","Binance","Quant","NEO"]
         price=[42770.09,2273.32,1.00001247,249.89905,79.0806,11.32725,0.168,0.99,112.51,13.43]
         sym='$'
         for x in range(10):
             print(lis1[x],'.',name[x],': ',sym,price[x],end="\n\n")
-            x=int(input("Enter the list number to purchase:"))
+        x=int(input("Enter the list number to purchase:"))
         if x==1:
             print("\n",name[0],': ',price[0],sym,)
             y=int(input("\nEnter quantity: "))
@@ -138,6 +253,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[0], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[0] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -149,6 +275,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[1], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[1] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -160,6 +297,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[2], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[2] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -171,6 +319,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[3], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[3] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -182,6 +341,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[4], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[4] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -193,6 +363,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[5], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[5] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -204,6 +385,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[6], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[6] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -215,6 +407,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[7], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[7] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -226,6 +429,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[8], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[8] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
@@ -237,6 +451,17 @@ class Crypto:
             z=int(input("1.Pay\n2.later\n"))
             if(z==1):
                 print("Payment done ✅ ")
+                pdf = FPDF()
+                pdf.add_page()
+                pdf.set_font("Arial", size=15)
+                pdf.cell(200, 10, txt="Payment Receipt", ln=1, align='C')
+                pdf.cell(200, 10, txt="Order Id :", ln=2, align='C')
+                pdf.cell(200, 10, txt=(str(id)), ln=3, align='C')
+                pdf.cell(200, 10, txt=name[9], ln=4, align='C')
+                pdf.cell(200, 10, txt="TOTAL PRICE IN USD", ln=5, align='C')
+                pdf.cell(200, 10, txt=str(price[9] * y), ln=6, align='C')
+                pdf.cell(200, 13, txt="congratulation!!", ln=8, align='C')
+                pdf.output("Payment Receipt.pdf")
             elif(z==2):
                 return Crypto.forex()
             else:
